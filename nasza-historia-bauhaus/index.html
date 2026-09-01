@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#f6eee6" />
+  <title>Nasza historia</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="noise"></div>
+
+  <main class="app">
+    <header class="topbar">
+      <span class="chapter" id="chapterLabel">Hejjjjjjjjjjjj</span>
+      <span class="counter" id="counterLabel">0 / 7</span>
+    </header>
+
+    <section class="screen active" id="startScreen">
+      <div class="decor decor-a"></div>
+      <div class="decor decor-b"></div>
+      <div class="dot-grid grid-a"></div>
+      <div class="line-stack"></div>
+
+      <div class="hero-copy">
+        <div class="mini-heart">♥</div>
+        <p class="eyebrow">DLA <span id="herName">CIEBIE</span></p>
+        <h1>nasza<br><span>historia</span></h1>
+        <div class="separator"><i></i><b>●</b><i></i></div>
+        <p class="intro" id="introText">
+          Każda historia ma swój początek.<br>
+          Nasza jest moim ulubionym rozdziałem.
+        </p>
+      </div>
+
+      <div class="budynek"><img class="budynek" src="foto/budynek.png" alt="Opis obrazka"</div>
+
+      <div class="start-card">
+        <span class="card-heart">♥</span>
+        <p>mam dla Ciebie coś wyjątkowego...</p>
+        <em>jesteś gotowa?</em>
+        <button class="primary-btn" id="startBtn">ROZPOCZNIJ PODRÓŻ <span>→</span></button>
+      </div>
+    </section>
+
+    <section class="screen" id="quizScreen">
+      <div class="quiz-head">
+        <span class="quiz-number" id="quizNumber">01</span>
+        <div>
+          <p class="eyebrow" id="quizType">ZAGADKA</p>
+          <h2 id="quizTitle">Tytuł</h2>
+        </div>
+      </div>
+
+      <div class="memory-card hidden" id="memoryCard">
+        <div class="memory-photo" id="memoryPhoto">
+          <span>WASZE<br>WSPOMNIENIE</span>
+        </div>
+        <p id="memoryText"></p>
+      </div>
+
+      <div class="question-card">
+        <p class="question" id="questionText"></p>
+        <div id="answerArea"></div>
+        <p class="hint" id="hintText"></p>
+        <button class="primary-btn check-btn" id="checkBtn">SPRAWDŹ <span>→</span></button>
+        <p class="feedback" id="feedback"></p>
+      </div>
+    </section>
+
+    <section class="screen" id="finalScreen">
+      <div class="final-decor circle-pink"></div>
+      <div class="final-decor square-dark"></div>
+      <div class="dot-grid grid-final"></div>
+
+      <div class="final-content">
+        <div class="final-heart">♥</div>
+        <p class="eyebrow">07 / 07 — KONIEC?</p>
+        <h2>udało Ci się.</h2>
+        <p class="final-lead">Odnalazłaś wszystkie małe fragmenty naszej historii.</p>
+
+        <div class="last-question">
+          <span>OSTATNIA ZAGADKA</span>
+          <strong>Ile powodów potrzebuję,<br>żeby Cię kochać?</strong>
+          <input id="finalAnswer" type="number" inputmode="numeric" placeholder="..." />
+          <button class="primary-btn" id="finalBtn">SPRAWDŹ <span>→</span></button>
+          <p class="feedback" id="finalFeedback"></p>
+        </div>
+
+        <div class="love-letter hidden" id="loveLetter">
+          <p id="finalLetter"></p>
+          <div class="signature">
+            <span>♥</span>
+            <strong id="signatureName">[TWOJE IMIĘ]</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="toast" id="toast"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
